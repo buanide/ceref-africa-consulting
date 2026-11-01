@@ -29,3 +29,56 @@
 .course-illustration { margin: -28px -28px 22px; background: #edf6f5; }
 .course-illustration img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 3; }
 .course .course-top { margin-bottom: 25px; font-size: 10px; letter-spacing: .5px; }
+
+/* Diaporama de la zone portrait : chaque image conserve ses proportions. */
+.hero-art .hero-carousel { inset:65px 20px 48px; border-radius:14px; background:#fafbf7; display:flex; flex-direction:column; }
+.hero-slides { position:relative; flex:1; min-height:0; overflow:hidden; }
+.hero-slide { height:100%; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:18px; }
+.hero-art .hero-carousel .hero-slide img { position:static; display:block; width:100%; height:100%; min-height:0; object-fit:contain; }
+.hero-art .hero-carousel .language-slide { padding:0; }
+.hero-art .hero-carousel .service-slide img { height:auto; max-height:65%; width:100%; }
+.hero-slide h3 { font-size:clamp(20px,2.3vw,30px); margin:15px 0 8px; }
+.hero-slide p { font-size:13px; margin:0; }
+.hero-slide .slide-action { display:inline-block; color:#132f3b; border-bottom:1px solid #009fd0; font-weight:700; font-size:12px; margin-top:15px; }
+.hero-slide.contact-slide { background:#ffda17; color:#132f3b; gap:14px; padding:25px; }
+.contact-slide h3 { margin:0; }
+.contact-slide p { color:#132f3b; }
+.contact-slide a { overflow-wrap:anywhere; font-size:clamp(13px,1.6vw,20px); font-weight:700; }
+.contact-slide .contact-slide-mark { font-size:32px; }
+.hero-carousel-controls { display:flex; align-items:center; justify-content:center; gap:12px; background:#132f3b; color:#fff; padding:8px; flex-shrink:0; }
+.hero-carousel-controls button { min-width:40px; min-height:36px; padding:6px 10px; border:1px solid #78929c; border-radius:4px; background:transparent; color:#fff; font-size:12px; }
+.hero-carousel-controls button:hover { background:#294c5c; }
+.hero-slide-count { font-size:11px; font-variant-numeric:tabular-nums; min-width:45px; text-align:center; }
+.hero-art .floating { display:none; }
+.hero-art .orbit { pointer-events:none; z-index:0; }
+.hero-art .hero-carousel { z-index:1; }
+@media(max-width:720px) { .hero-art .hero-carousel { inset:60px 15px 48px; } .hero-slide h3 { font-size:24px; } }
+
+/* Première diapositive : conserver le cadrage rapproché du portrait initial. */
+.hero-carousel .hero-slide:first-child { position: relative; padding: 0; overflow: hidden; }
+.hero-art .hero-carousel .hero-slide:first-child img {
+  position: absolute;
+  width: 115%;
+  height: auto;
+  max-width: none;
+  left: -6%;
+  bottom: -33%;
+  top: auto;
+  object-fit: initial;
+}
+@media (min-width: 1500px) {
+  .hero-art .hero-carousel .hero-slide:first-child img { bottom: -42%; }
+}
+@media (min-width: 721px) and (max-width: 1000px) {
+  .hero-art .hero-carousel .hero-slide:first-child img { width: 145%; left: -22%; bottom: -28%; }
+}
+@media (max-width: 720px) {
+  .hero-art .hero-carousel .hero-slide:first-child img { width: 110%; left: -5%; bottom: -38%; }
+}
+
+/* L'encart de bienvenue accompagne uniquement le portrait d'origine. */
+.hero-art.show-greeting .floating {
+  display: block;
+  z-index: 2;
+  pointer-events: none;
+}

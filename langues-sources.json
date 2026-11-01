@@ -1,0 +1,119 @@
+[
+  {
+    "language": "Anglais",
+    "asset": "anglais-plusieurs-pays.svg",
+    "countries": [
+      {
+        "code": "US",
+        "name": "États-Unis"
+      },
+      {
+        "code": "GB-ENG",
+        "name": "Angleterre"
+      }
+    ],
+    "basis": "Repères visuels choisis par le client ; aucun classement par nombre de locuteurs.",
+    "source": "https://worldlanguagemap.com/language/english"
+  },
+  {
+    "language": "Allemand",
+    "asset": "allemand-plusieurs-pays.svg",
+    "countries": [
+      {
+        "code": "DE",
+        "name": "Allemagne"
+      },
+      {
+        "code": "AT",
+        "name": "Autriche"
+      },
+      {
+        "code": "CH",
+        "name": "Suisse"
+      }
+    ],
+    "basis": "Locuteurs natifs · classement estimatif",
+    "source": "https://www.worlddata.info/languages/german.php"
+  },
+  {
+    "language": "Fulfulde",
+    "asset": "fulfulde-plusieurs-pays.svg",
+    "countries": [
+      {
+        "code": "NG",
+        "name": "Nigeria"
+      },
+      {
+        "code": "GN",
+        "name": "Guinée"
+      },
+      {
+        "code": "SN",
+        "name": "Sénégal"
+      }
+    ],
+    "basis": "Ensemble peul / fula · locuteurs natifs",
+    "source": "https://www.worlddata.info/languages/fulfulde.php"
+  },
+  {
+    "language": "Swahili",
+    "asset": "swahili-plusieurs-pays.svg",
+    "countries": [
+      {
+        "code": "TZ",
+        "name": "Tanzanie"
+      },
+      {
+        "code": "CD",
+        "name": "RDC"
+      },
+      {
+        "code": "KE",
+        "name": "Kenya"
+      }
+    ],
+    "basis": "Total des locuteurs · classement estimatif",
+    "source": "https://worldlanguagemap.com/language/swahili"
+  },
+  {
+    "language": "Mandarin",
+    "asset": "mandarin-plusieurs-pays.svg",
+    "countries": [
+      {
+        "code": "CN",
+        "name": "Chine"
+      },
+      {
+        "code": "TW",
+        "name": "Taïwan"
+      },
+      {
+        "code": "MY",
+        "name": "Malaisie"
+      }
+    ],
+    "basis": "Pays et territoires · sélection estimative",
+    "source": "https://worldlanguagemap.com/language/mandarin-chinese"
+  },
+  {
+    "language": "Lingala",
+    "asset": "lingala-plusieurs-pays.svg",
+    "countries": [
+      {
+        "code": "CD",
+        "name": "RDC"
+      },
+      {
+        "code": "CG",
+        "name": "Congo"
+      }
+    ],
+    "basis": "Deux principaux foyers · 3e pays non confirmé",
+    "source": "https://en.wikipedia.org/wiki/Lingala",
+    "catchphrase": {
+      "text": "Mbote ! Boyei bolamu !",
+      "translation": "Bonjour ! Bienvenue !",
+      "source": "https://www.omniglot.com/language/phrases/lingala.htm"
+    }
+  }
+]
